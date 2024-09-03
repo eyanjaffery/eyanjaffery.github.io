@@ -1,5 +1,3 @@
-# eyanjaffery.github.io
-
 <!--
  Name: Eyan Jaffery
  Course: IST 256 - 001
