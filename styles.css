@@ -1,57 +1,117 @@
-/* CSS Document */
-/* External CSS for styling the page */
-
-/* Styling the body */
+/* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #F5F7FA; /* Light, clean background color */
+    color: #1F2D3D;
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    line-height: 1.6;
 }
 
-/* Header styling */
+/* Header Styling */
 header {
-    background-color: #f0f0f0;
-    padding: 20px;
-    text-align: center;
-    border-bottom: 2px solid #d6d7d7;
+	display: flex;
+    background-color: #1F2D3D; /* Dark header for contrast */
+    padding: 15px;
+	text-align: center;
+	color: white;
+    border-bottom: 2px solid #2A3D51;
+    margin-bottom: 40px;
 }
-
-/* Styling for the h1 element in the header */
+header div {
+	margin-left: 55px;
+	margin-top: 5px;
+	margin-right: 65px;
+}
+header img {
+	padding: 3px;
+	height: 80px;
+	margin-bottom: 6px;
+}
 header h1 {
-    margin: 0;
-    font-size: 2em;
+    color: #FFFFFF; /* White text for readability */
+    font-size: 2.5em;
+	margin: 0px;
+	margin-top: 10px;
+    text-align: center;
+	float: right;
+	
 }
 
-/* Navigation styling */
+/* Navigation Bar Styling */
 nav ul {
-    list-style-type: none;
-    padding: 0;
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+    background-color: #2E3C4E;
+    border-radius: 10px;
 }
-
 nav ul li {
-    margin-bottom: 10px;
+    padding: 10px 0;
 }
-
 nav ul li a {
     text-decoration: none;
-    color: black;
+    color: #FFFFFF;
     font-weight: bold;
+    font-size: 1.1em;
+    display: block;
+    padding: 12px;
+    border-radius: 8px;
 }
-
 nav ul li a:hover {
-    color: #4CAF50;
+    background-color: #3A8BD6;
+    color: #FFFFFF;
 }
 
-/* Main content section */
-section {
-    padding: 20px;
-}
-
-/* Footer styling */
+/* Footer Styling */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #d6d7d7;
-    border-top: 2px solid #ccc;
+    background-color: #1F2D3D;
+    border-top: 2px solid #2A3D51;
+    margin-top: 40px;
+	color: white;
+	padding: 30px;
+}
+footer a {
+    color: #4FB0FF;
+    text-decoration: none;
+	background-color: #1F2D3D;
+	
+}
+footer a:hover{
+    text-decoration: underline;
+}
+
+/* Flexbox for Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Increased space between elements */
+    padding: 0 20px; /* More padding for breathing room */
+}
+
+/*Products Section*/
+.products {
+	 background-color: #FFFFFF;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Ads Section */
+.ads {
+	 background-color: #F0F3F7;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Better Readability */
+h2 {
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 1.2em;
 }

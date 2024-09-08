@@ -1,98 +1,71 @@
+<!DOCTYPE html>
 <!--
  Name: Eyan Jaffery
  Course: IST 256 - 001
- Assignment: L1 Solo Lab Assignment Storefront Home Page
- Date: 9/1/2020
+ Assignment: L2 - HTML and CSS
+ Date: 9/6/2020
  -->
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eyan Jaffery Storefront</title>
-    <link rel="stylesheet" href="styles.css"> <!-- External CSS Link -->
+    <title>DigiFort Storefront</title>
+
+    <!-- External CSS Link -->
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Internal CSS -->
     <style>
-        /* Internal CSS for quick adjustments */
-        body {
-            background-color: #f9f9f9;
-        }
-
-        /* Main content area styling */
-        div[style*="background: #c5c6c6"] {
-            background-color: #ffffff;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px;
-        }
-
-        /* Styling for navigation menu */
-        nav ul li {
-            padding: 10px 0;
-            font-size: 1.2em;
-        }
-
-        /* Ad section updates */
-        div[style*="background: #9e9f9f"] {
-            background-color: #f0f0f0;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-        }
+        
     </style>
 </head>
 
 <body>
-<!-- Header -->
-<header style="background-color: lightgray; padding: 20px; border-bottom: 2px solid #ccc;">
-    <div style="display: flex; justify-content: space-between; align-items: center;">
-        <img src="img.png" alt="Store Logo" width="60" height="60" style="border-radius: 50%;">
-        <h1 style="margin: 0; font-size: 2em; color: #333;">Eyan Jaffery</h1>
+
+<header>
+    <div>
+        <img src="img.png" alt="DigiFort Logo">
+    </div>
+    <div style="flex:1">
+        <h1>DigiFort</h1>
     </div>
 </header>
 
-<!-- Main Container -->
-<div style="display: flex; max-width: 1200px; margin: 0 auto;">
-
-    <!-- Navigation -->
-    <div style="flex: 1; background: #e0e0e0; padding: 20px; margin-right: 20px; border-radius: 10px;">
+<!-- Main Container with inline CSS -->
+<div class="container">
+    <div style="flex: 1;">
         <nav>
-            <ul style="list-style: none; padding: 0;">
-                <li><a href="#" style="text-decoration: none; color: #333;">Home</a></li>
-                <li><a href="#" style="text-decoration: none; color: #333;">About Us</a></li>
-                <li><a href="#" style="text-decoration: none; color: #333;">Shopping Cart</a></li>
-                <li><a href="#" style="text-decoration: none; color: #333;">Products</a></li>
-                <li><a href="#" style="text-decoration: none; color: #333;">Login</a></li>
-                <li><a href="#" style="text-decoration: none; color: #333;">Contact Us</a></li>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Cyber Plans</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Contact Us</a></li>
             </ul>
         </nav>
     </div>
 
-    <!-- Main Content Section -->
-    <div style="flex: 2; background: #ffffff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+	<!-- Products Section with inline CSS-->
+    <div class="products" style="flex: ;">
         <section>
-            <h2 style="margin-top: 0; font-size: 1.8em;">Current products on sale</h2>
-            <p>This is the main products section.</p>
+            <h2 style="font-size: 2.2em; color: #1F2D3D; margin-bottom: 20px;">Products</h2>
+            <p style="color: #4A4A4A; font-size: 1.1em;">Post the products here</p>
         </section>
     </div>
 
-    <!-- Aside Section -->
-    <div style="flex: 1; background: #f0f0f0; padding: 20px; margin-left: 20px; border-radius: 10px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+    <!-- Aside Section with inline CSS -->
+    <div class="ads" style="flex: 1;">
         <aside>
-            <h2 style="margin-top: 0;">Advertisements</h2>
-            <p>Display ads and marketing stuff here.</p>
+            <h2 style="font-size: 1.8em; color: #1F2D3D; margin-bottom: 20px;">Ads/Marketing</h2>
+            <p style="color: #4A4A4A; font-size: 1.1em;">Put the ads and marketing stuff here</p>
         </aside>
     </div>
-
 </div>
 
-<!-- Footer Section -->
-<footer style="text-align: center; background-color: #e0e0e0; padding: 10px; margin-top: 20px; border-top: 2px solid #ccc;">
-    <p><a href="#" style="color: blue; text-decoration: none;">Terms of Use</a> |
-        <a href="#" style="color: blue; text-decoration: none;">Cookie and Privacy Policy</a>
-        | &copy; 2024 Eyan Jaffery Merch</p>
+<!-- Footer Section-->
+<footer>
+    <p><a href="#">Terms of Use</a> |
+       <a href="#">Cookie and Privacy Policy</a> | &copy; 2024 DigiFort</p>
 </footer>
 
 </body>
