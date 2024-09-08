@@ -38,6 +38,15 @@ header h1 {
 	
 }
 
+/* Flexbox for Layout */
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px; /* Increased space between elements */
+    padding: 0 20px; /* More padding for breathing room */
+}
+
 /* Navigation Bar Styling */
 nav ul {
     list-style: none;
@@ -63,6 +72,23 @@ nav ul li a:hover {
     color: #FFFFFF;
 }
 
+
+/*Products Section*/
+.products {
+	 background-color: #FFFFFF;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*Ads Section */
+.ads {
+	 background-color: #F0F3F7;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
@@ -80,31 +106,6 @@ footer a {
 }
 footer a:hover{
     text-decoration: underline;
-}
-
-/* Flexbox for Layout */
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px; /* Increased space between elements */
-    padding: 0 20px; /* More padding for breathing room */
-}
-
-/*Products Section*/
-.products {
-	 background-color: #FFFFFF;
-	padding: 40px;
-	border-radius: 12px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-/*Ads Section */
-.ads {
-	 background-color: #F0F3F7;
-	padding: 40px;
-	border-radius: 12px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Better Readability */
