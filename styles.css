@@ -38,8 +38,42 @@ header h1 {
 
 }
 
+/* Horizontal Navigation Bar Styling */
+.horizontal-nav {
+    background-color: #0F471E; /* Dark green background */
+    padding: 10px 0;
+    text-align: center;
+    margin-top: 0;
+}
+
+.horizontal-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.horizontal-nav ul li {
+    margin: 0 15px;
+}
+
+.horizontal-nav ul li a {
+    text-decoration: none;
+    color: #71B385;
+    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+.horizontal-nav ul li a:hover {
+    background-color: #71B385; /* Slightly lighter green for hover */
+    color: #FFFFFF;
+}
+
 /* Flexbox for Layout */
-.container {
+.containerIndex {
     display: flex;
     max-width: 1200px;
     margin: 0 auto;
