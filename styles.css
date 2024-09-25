@@ -1,7 +1,7 @@
 /* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #F5F7FA; /* Light, clean background color */
+    background-color: #71B385; /* Light, clean background color */
     color: #1F2D3D;
     margin: 0;
     padding: 0;
@@ -11,7 +11,7 @@ body {
 /* Header Styling */
 header {
 	display: flex;
-    background-color: #1F2D3D; /* Dark header for contrast */
+    background-color: #0F471E; /* Dark header for contrast */
     padding: 15px;
 	text-align: center;
 	color: white;
@@ -29,13 +29,13 @@ header img {
 	margin-bottom: 6px;
 }
 header h1 {
-    color: #FFFFFF; /* White text for readability */
+    color: #71B385; /* White text for readability */
     font-size: 2.5em;
 	margin: 0px;
 	margin-top: 10px;
     text-align: center;
 	float: right;
-	
+
 }
 
 /* Flexbox for Layout */
@@ -52,7 +52,7 @@ nav ul {
     list-style: none;
     padding: 20px;
     margin: 0;
-    background-color: #2E3C4E;
+    background-color: #0F471E;
     border-radius: 10px;
 }
 nav ul li {
@@ -68,14 +68,14 @@ nav ul li a {
     border-radius: 8px;
 }
 nav ul li a:hover {
-    background-color: #3A8BD6;
+    background-color: #71B385;
     color: #FFFFFF;
 }
 
 
 /*Products Section*/
 .products {
-	 background-color: #FFFFFF;
+	 background-color: #D3F8DD;
 	padding: 40px;
 	border-radius: 12px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -83,7 +83,7 @@ nav ul li a:hover {
 
 /*Ads Section */
 .ads {
-	 background-color: #F0F3F7;
+	 background-color: #D3F8DD;
 	padding: 40px;
 	border-radius: 12px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -92,17 +92,16 @@ nav ul li a:hover {
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #1F2D3D;
+    background-color: #0F471E;
     border-top: 2px solid #2A3D51;
     margin-top: 40px;
 	color: white;
 	padding: 30px;
 }
 footer a {
-    color: #4FB0FF;
+    color: #71B385;
     text-decoration: none;
-	background-color: #1F2D3D;
-	
+
 }
 footer a:hover{
     text-decoration: underline;
