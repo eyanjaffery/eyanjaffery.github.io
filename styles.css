@@ -1,49 +1,56 @@
 /* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #71B385; /* Light, clean background color */
+    background-color: #a0baa7;
     color: #1F2D3D;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
+.signupBody {
+    background-color: #a0baa7;
+}
+
+
 /* Header Styling */
 header {
-	display: flex;
-    background-color: #0F471E; /* Dark header for contrast */
-    padding: 15px;
-	text-align: center;
-	color: white;
-    border-bottom: 2px solid #2A3D51;
-    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0F471E;
+    padding: 15px 15px 40px;
+    color: white;
+    margin-bottom: 20px;
+    min-height: 80px;
 }
-header div {
-	margin-left: 55px;
-	margin-top: 5px;
-	margin-right: 65px;
-}
+
 header img {
-	padding: 3px;
-	height: 80px;
-	margin-bottom: 6px;
+    position: absolute;
+    left: 70px;
+    top: 20px;
+    padding: 3px;
+    height: 80px;
+    margin-bottom: 6px;
 }
+
 header h1 {
+    position: absolute;
+    right: 50px;
+    top: 25px;
     color: #71B385; /* White text for readability */
     font-size: 2.5em;
-	margin: 0px;
-	margin-top: 10px;
+    margin: 0px;
+    margin-top: 10px;
     text-align: center;
-	float: right;
-
+    float: right;
 }
 
-/* Horizontal Navigation Bar Styling */
+/* Horizontal Navigation Bar Styling in the center */
 .horizontal-nav {
-    background-color: #0F471E; /* Dark green background */
-    padding: 10px 0;
+    background-color: #0F471E;
     text-align: center;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 .horizontal-nav ul {
@@ -72,7 +79,7 @@ header h1 {
     color: #FFFFFF;
 }
 
-/* Flexbox for Layout */
+/* Flexbox for Layout index.html */
 .containerIndex {
     display: flex;
     max-width: 1200px;
@@ -89,9 +96,11 @@ nav ul {
     background-color: #0F471E;
     border-radius: 10px;
 }
+
 nav ul li {
     padding: 10px 0;
 }
+
 nav ul li a {
     text-decoration: none;
     color: #FFFFFF;
@@ -101,26 +110,77 @@ nav ul li a {
     padding: 12px;
     border-radius: 8px;
 }
+
 nav ul li a:hover {
     background-color: #71B385;
     color: #FFFFFF;
 }
 
-
-/*Products Section*/
+/* Products Section */
 .products {
-	 background-color: #D3F8DD;
-	padding: 40px;
-	border-radius: 12px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    background-color: #D3F8DD;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
-/*Ads Section */
+.products h2 {
+    font-size: 2.2em;
+    color: #1F2D3D;
+    margin-bottom: 20px;
+}
+
+.products p {
+    color: #4A4A4A;
+    font-size: 1.1em;
+}
+
+.card {
+    width: 40rem;
+    background-color: #FFFFFF;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.card:hover{
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.card-body {
+    padding: 10px;
+}
+
+.card-text {
+    color: #4A4A4A;
+    font-size: 1.1em;
+}
+
+
+/* Ads Section */
 .ads {
-	 background-color: #D3F8DD;
-	padding: 40px;
-	border-radius: 12px;
-	box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    max-width: 300px;
+    background-color: #D3F8DD;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ads h2 {
+    font-size: 1.8em;
+    color: #1F2D3D;
+    margin-bottom: 20px;
 }
 
 /* Footer Styling */
@@ -129,15 +189,16 @@ footer {
     background-color: #0F471E;
     border-top: 2px solid #2A3D51;
     margin-top: 40px;
-	color: white;
-	padding: 30px;
+    color: white;
+    padding: 30px;
 }
+
 footer a {
     color: #71B385;
     text-decoration: none;
-
 }
-footer a:hover{
+
+footer a:hover {
     text-decoration: underline;
 }
 

@@ -13,19 +13,6 @@
 
     <!-- External CSS Link -->
     <link rel="stylesheet" type="text/css" href="styles.css">
-
-    <!-- Internal CSS -->
-    <style>
-		h2 {
-			font-size: 2.2em;
-			color: #1F2D3D;
-			margin-bottom: 20px;
-		}
-		p {
-			color: #4A4A4A;
-			font-size: 1.1em;
-		}
-    </style>
 </head>
 
 <body>
@@ -34,14 +21,14 @@
     <div>
         <img src="logo.png" alt="DigiFort Logo">
     </div>
-    <div style="flex:1">
+    <div class="header-title">
         <h1>DigiFort</h1>
     </div>
 </header>
 
-<!-- Main Container with inline CSS -->
+<!-- Main Container -->
 <div class="containerIndex">
-    <div style="flex: 1;">
+    <div class="nav-container">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -49,23 +36,32 @@
                 <li><a href="#">Cyber Plans</a></li>
                 <li><a href="signup.html">Signup</a></li>
                 <li><a href="#">Contact Us</a></li>
-
             </ul>
         </nav>
     </div>
 
-	<!-- Products Section with inline CSS-->
-    <div class="products" style="flex: 2;">
+    <!-- Products Section -->
+    <div class="products">
         <section>
-            <h2 style="font-size: 2.2em; color: #1F2D3D; margin-bottom: 20px;">Products</h2>
-            <p>Post the products here</p>
+            <div class="card">
+                <img src="prod1.png" class="card-img-top" alt="Product 1">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="prod2.png" class="card-img-top" alt="Product 2">
+                <div class="card-body">
+                    <p class="card-text">Another example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
         </section>
     </div>
 
-    <!-- Aside Section with inline CSS -->
-    <div class="ads" style="flex: 1;">
+    <!-- Aside Section -->
+    <div class="ads">
         <aside>
-            <h2 style="font-size: 1.8em; color: #1F2D3D; margin-bottom: 20px;">Ads/Marketing</h2>
+            <h2>Ads/Marketing</h2>
             <p>Put the ads and marketing stuff here</p>
         </aside>
     </div>
@@ -74,7 +70,7 @@
 <!-- Footer Section-->
 <footer>
     <p><a href="#">Terms of Use</a> |
-       <a href="#">Cookie and Privacy Policy</a> | &copy; 2024 DigiFort</p>
+        <a href="#">Cookie and Privacy Policy</a> | &copy; 2024 DigiFort</p>
 </footer>
 
 </body>
