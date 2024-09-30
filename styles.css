@@ -40,7 +40,6 @@ header h1 {
     top: 25px;
     color: #71B385; /* White text for readability */
     font-size: 2.5em;
-    margin: 0px;
     margin-top: 10px;
     text-align: center;
     float: right;
@@ -49,7 +48,7 @@ header h1 {
 /* Horizontal Navigation Bar Styling in the center */
 .horizontal-nav {
     background-color: #0F471E;
-    text-align: center;
+    text-align: right;
     margin-top: 10px;
 }
 
