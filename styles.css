@@ -1,26 +1,24 @@
 /* General Body Styles */
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #a0baa7;
-    color: #1F2D3D;
+    background-color: #d2d2d6;
+    color: #d2d2d6;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 .signupBody {
-    background-color: #a0baa7;
+    background-color: #4A4A4A;
 }
-
 
 /* Header Styling */
 header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0F471E;
+    background-color: #292525;
     padding: 15px 15px 40px;
-    color: white;
     margin-bottom: 20px;
     min-height: 80px;
 }
@@ -47,7 +45,7 @@ header h1 {
 
 /* Horizontal Navigation Bar Styling in the center */
 .horizontal-nav {
-    background-color: #0F471E;
+    background-color: #292525;
     text-align: right;
     margin-top: 10px;
 }
@@ -66,7 +64,7 @@ header h1 {
 
 .horizontal-nav ul li a {
     text-decoration: none;
-    color: #71B385;
+    color: #4C4141;
     font-weight: bold;
     font-size: 1.1em;
     padding: 10px 15px;
@@ -74,7 +72,7 @@ header h1 {
 }
 
 .horizontal-nav ul li a:hover {
-    background-color: #71B385; /* Slightly lighter green for hover */
+    background-color: #4C4141; /* Slightly lighter green for hover */
     color: #FFFFFF;
 }
 
@@ -92,7 +90,7 @@ nav ul {
     list-style: none;
     padding: 20px;
     margin: 0;
-    background-color: #0F471E;
+    background-color: #292525;
     border-radius: 10px;
 }
 
@@ -111,23 +109,17 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #71B385;
+    background-color: #4C4141;
     color: #FFFFFF;
 }
 
 /* Products Section */
 .products {
     flex: 1;
-    background-color: #D3F8DD;
+    background-color: #4C4141;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-}
-
-.products h2 {
-    font-size: 2.2em;
-    color: #1F2D3D;
-    margin-bottom: 20px;
 }
 
 .products p {
@@ -170,7 +162,7 @@ nav ul li a:hover {
 .ads {
     display: flex;
     max-width: 300px;
-    background-color: #D3F8DD;
+    background-color: #292525;
     padding: 40px;
     border-radius: 12px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -178,15 +170,14 @@ nav ul li a:hover {
 
 .ads h2 {
     font-size: 1.8em;
-    color: #1F2D3D;
+    color: #FFFFFF;
     margin-bottom: 20px;
 }
 
 /* Footer Styling */
 footer {
     text-align: center;
-    background-color: #0F471E;
-    border-top: 2px solid #2A3D51;
+    background-color: #292525;
     margin-top: 40px;
     color: white;
     padding: 30px;

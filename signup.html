@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,18 +41,19 @@
                         </div>
                         <div class="mb-3">
                             <label for="email" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="text" class="form-control" id="email" placeholder="Enter your email" onfocusout="validateEmail(this)" oninput="validateEmail(this)">
                         </div>
                         <div class="mb-3">
                             <label for="password" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required minlength="8" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}">
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password" required minlength="8"
+                                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}" oninput="validatePassword()">
                             <div class="invalid-feedback">
                                 Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="confirmPassword" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password">
+                            <input type="password" class="form-control" id="confirmPassword" placeholder="Confirm your password" oninput="validatePassword()">
                         </div>
                         <div class="d-grid gap-2">
                             <button type="submit" class="btn btn-primary">Sign Up</button>
@@ -71,49 +73,6 @@
         <a href="#">Cookie and Privacy Policy</a> | &copy; 2024 DigiFort</p>
 </footer>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // add event listener to form
-    document.getElementById('signupForm').addEventListener('submit', function(event) {
-        event.preventDefault(); // Prevent form submission
-
-        let form = event.target; // Get the form
-
-        // Gather form data
-        let formData = {
-            name: form.name.value,
-            email: form.email.value,
-            password: form.password.value,
-            confirmPassword: form.confirmPassword.value
-        };
-
-        // Custom validation
-        let passwordPattern = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
-        if (!passwordPattern.test(formData.password)) {
-            form.password.setCustomValidity('Password must be at least 8 characters long, contain at least one uppercase letter, one lowercase letter, one digit, and one special character.');
-        } else {
-            form.password.setCustomValidity('');
-        }
-        if (formData.password !== formData.confirmPassword) {
-            form.confirmPassword.setCustomValidity('Passwords do not match');
-        } else {
-            delete formData.confirmPassword;
-            form.confirmPassword.setCustomValidity('');
-        }
-
-        // Check if form is valid
-        if (form.checkValidity()) {
-            // Serialize form data to JSON
-            const jsonData = JSON.stringify(formData);
-            //Display JSON on screen
-            console.log(jsonData);
-            // Form is valid, reset form
-            form.reset();
-        } else {
-            // Form is invalid, show validation errors
-            form.reportValidity();
-        }
-    });
-</script>
+<script src="script.js"></script>
 </body>
 </html>
