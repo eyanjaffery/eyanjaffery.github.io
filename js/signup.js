@@ -123,9 +123,9 @@ function validateConfirmPassword() {
     let confirmPassword = $('#confirmPassword').val();
 
     // Check if password and confirm password match
-    if (confirmPassword !== password) {
-        $('#confirmPassword').addClass('invalid-input').remooveClass('valid-input');
-        $('#confirmPassword-error').text('Passwords do not match.');
+    if (confirmPassword !== password || validatePassword(confirmPassword) === false) {
+        $('#confirmPassword').addClass('invalid-input').removeClass('valid-input');
+        $('#confirmPassword-error').text('Password invalid or does not match.');
         return false;
     } else {
         $('#confirmPassword').addClass('valid-input').removeClass('invalid-input');

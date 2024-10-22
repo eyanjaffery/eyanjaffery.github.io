@@ -204,9 +204,11 @@ p {
 
 /* Form Styling */
 .valid-input {
-    border-color: green !important;
+    color: black !important;
+    border : 1px solid green !important;
 }
 
 .invalid-input {
-    border-color: red !important;
+    color: red !important;
+    border: 2px solid red !important;
 }
