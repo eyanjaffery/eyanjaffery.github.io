@@ -1,4 +1,14 @@
+<!--
+ Name: Eyan Jaffery
+ Course: IST 256 - 001
+ Assignment: Storefront Web Application
+ Date: 10/22/2020
+ -->
 $(document).ready(function () {
+    //Scroll to form automatically
+    $('.container').get(0).scrollIntoView();
+
+
     // Attach form submit event listener using jQuery
     let signupForm = $('#signupForm');
 
@@ -13,6 +23,10 @@ $(document).ready(function () {
 
     signupForm.find('#username').on('input', function () {
         validateUsername($(this));
+    });
+
+    signupForm.find('#confirmUsername').on('input', function () {
+        validateConfirmUsername();
     });
 
     signupForm.find('#password').on('input', function () {
@@ -38,7 +52,8 @@ $(document).ready(function () {
             let formData = {
                 name: $('#name').val().trim(),
                 email: $('#email').val().trim(),
-                password: $('#password').val()
+                username: $('#username').val(),
+                password: $('#password').val(),
             };
 
             let jsonData = JSON.stringify(formData);
@@ -81,6 +96,23 @@ function validateUsername(usernameField) {
     } else {
         $('#username').addClass('valid-input').removeClass('invalid-input');
         $('#username-error').text('');
+        return true;
+    }
+}
+
+// Function to check if username and confirm username match
+function validateConfirmUsername() {
+    let username = $('#username').val();
+    let confirmUsername = $('#confirmUsername').val();
+
+    // Check if username and confirm username match
+    if (confirmUsername !== username) {
+        $('#confirmUsername').addClass('invalid-input').removeClass('valid-input');
+        $('#confirmUsername-error').text('Usernames do not match.');
+        return false;
+    } else {
+        $('#confirmUsername').addClass('valid-input').removeClass('invalid-input');
+        $('#confirmUsername-error').text('');
         return true;
     }
 }
