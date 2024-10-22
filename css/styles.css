@@ -201,6 +201,28 @@ p {
     margin-bottom: 1.2em;
 }
 
+/* Modal Styling */
+.modal-content {
+    border-radius: 10px;
+    background-color: #f8f9fa; /* Light background color */
+}
+
+.modal-header {
+    background-color: #4A4A4A; /* Your primary color */
+    color: #fff; /* White text color */
+    border-bottom: 1px solid #4A4A4A;
+}
+
+.modal-footer {
+    border-top: none;
+}
+
+
+.btn-primary {
+    background-color: #4a4a4a !important;
+    border-color: #4a4a4a !important;
+    color: #fff !important;
+}
 
 /* Form Styling */
 .valid-input {

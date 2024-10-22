@@ -38,7 +38,7 @@
         </ul>
     </nav>
 </header>
-
+<!-- Signup Form -->
 <div class="container">
     <div class="row justify-content-center mt-5">
         <div class="col-md-6">
@@ -86,6 +86,24 @@
                         </div>
                     </form>
                 </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="successModalLabel">Account Created Successfully</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Your account has been created successfully! Here is the account information:</p>
+                <p id="jsonDataDisplay" class="bg-light p-2 rounded" style="max-height: 200px; overflow-y: auto;"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

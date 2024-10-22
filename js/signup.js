@@ -44,11 +44,13 @@ $(document).ready(function () {
         // Perform all validation checks using reusable functions
         let isNameValid = validateName($('#name'));
         let isEmailValid = validateEmail($('#email'));
+        let isUsernameValid = validateUsername($('#username'));
+        let isConfirmUsernameValid = validateConfirmUsername();
         let isPasswordValid = validatePassword($('#password'));
         let isConfirmPasswordValid = validateConfirmPassword();
 
         // Check if all fields are valid
-        if (isNameValid && isEmailValid && isPasswordValid && isConfirmPasswordValid) {
+        if (isNameValid && isEmailValid && isUsernameValid &&  isConfirmUsernameValid && isPasswordValid && isConfirmPasswordValid) {
             let formData = {
                 name: $('#name').val().trim(),
                 email: $('#email').val().trim(),
@@ -57,11 +59,14 @@ $(document).ready(function () {
             };
 
             let jsonData = JSON.stringify(formData);
-            alert('Signup successful!\n' + jsonData);
+            console.log('Signup successful!\n' + jsonData);
             signupForm.trigger('reset'); // Reset the form after successful submission
 
             // Reset classes
             $('input').removeClass('valid-input invalid-input');
+            // Display the formatted JSON data in a modal
+            $('#jsonDataDisplay').text(jsonData);
+            $('#successModal').modal('show');
         } else {
             console.log("Form invalid. PLEASE FIX ERRORS BEFORE SUBMITTING.");
         }
@@ -106,11 +111,12 @@ function validateConfirmUsername() {
     let confirmUsername = $('#confirmUsername').val();
 
     // Check if username and confirm username match
-    if (confirmUsername !== username) {
+    if ((confirmUsername !== username) || (confirmUsername === "")) {
         $('#confirmUsername').addClass('invalid-input').removeClass('valid-input');
         $('#confirmUsername-error').text('Usernames do not match.');
         return false;
-    } else {
+    }
+    else {
         $('#confirmUsername').addClass('valid-input').removeClass('invalid-input');
         $('#confirmUsername-error').text('');
         return true;
@@ -123,7 +129,7 @@ function validateConfirmPassword() {
     let confirmPassword = $('#confirmPassword').val();
 
     // Check if password and confirm password match
-    if (confirmPassword !== password || validatePassword(confirmPassword) === false) {
+    if ((confirmPassword !== password) || (confirmPassword === "")) {
         $('#confirmPassword').addClass('invalid-input').removeClass('valid-input');
         $('#confirmPassword-error').text('Password invalid or does not match.');
         return false;
